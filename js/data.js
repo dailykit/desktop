@@ -19,7 +19,7 @@ var startmenu_icons = [
 var start_menu = {
   id: "1",
   value: "Start",
-  submenu: ["Dhtmlx sheduler", "Dhtmlx gantt", "Filemanager"],
+  submenu: ["Filemanager"],
 };
 
 var filemanagerData = [
@@ -334,118 +334,17 @@ var filemanagerData = [
 ];
 
 var winmenu_1 = [
-  {
-    value: "Calendar",
-    id: "calendar",
-    icon: "calendar",
-    color: "#107c10",
-    x: 1,
-    y: 1,
-  },
-  {
-    value: "Email",
-    id: "email",
-    icon: "email",
-    color: "#297acc",
-    width: 2,
-    x: 2,
-    y: 1,
-  },
-  {
-    value: "Photos",
-    id: "photos",
-    img: "img/photos.png",
-    width: 2,
-    color: "#284063",
-    x: 1,
-    y: 2,
-  },
-  {
-    value: "Dropbox",
-    id: "dropbox",
-    icon: "dropbox",
-    color: "#297acc",
-    x: 3,
-    y: 2,
-  },
-  {
-    value: "Weather",
-    id: "weather",
-    icon: "sunglasses",
-    color: "#1a4588",
-    x: 1,
-    y: 3,
-  },
-  { value: "Skype", id: "skype", icon: "skype", color: "#00b1f0", x: 2, y: 3 },
-  {
-    value: "Maps",
-    id: "map",
-    icon: "map-marker",
-    color: "#80397b",
-    x: 3,
-    y: 3,
-  },
+  //   {
+  //     value: "Email",
+  //     id: "email",
+  //     icon: "email",
+  //     color: "#297acc",
+  //     width: 2,
+  //     x: 2,
+  //     y: 1,
+  //   },
 ];
-var winmenu_2 = [
-  {
-    value: "Games",
-    id: "games",
-    icon: "gamepad-variant",
-    color: "#1a4588",
-    x: 1,
-    y: 1,
-  },
-  {
-    value: "Music",
-    id: "music",
-    icon: "headphones",
-    color: "#dc3c00",
-    x: 2,
-    y: 1,
-  },
-  { value: "Movies", id: "video", icon: "film", color: "#80397b", x: 3, y: 1 },
-  {
-    value: "Sports",
-    id: "sports",
-    img: "img/sports.png",
-    color: "#297acc",
-    x: 1,
-    y: 2,
-  },
-  {
-    value: "News",
-    id: "news",
-    img: "img/news.png",
-    width: 2,
-    color: "#284063",
-    x: 2,
-    y: 2,
-  },
-  {
-    value: "Store",
-    id: "store",
-    icon: "shopping",
-    color: "#107c10",
-    x: 1,
-    y: 3,
-  },
-  {
-    value: "Money",
-    id: "money",
-    icon: "finance",
-    color: "#1a4588",
-    x: 2,
-    y: 3,
-  },
-  {
-    value: "Travel",
-    id: "travel",
-    icon: "briefcase",
-    color: "#297acc",
-    x: 3,
-    y: 3,
-  },
-];
+var winmenu_2 = [];
 
 /*
 var test_data_set_2015 =
