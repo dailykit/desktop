@@ -205,46 +205,6 @@ if (window.desktopApp)
           ],
         };
       },
-      filemanager: {
-        css: "no_border ",
-        toolbar: function () {
-          return [
-            "Filemanager",
-            function () {
-              $$("filemanager_win").hide();
-              webix.html.removeCss($$("filemanager_button").$view, "active");
-            },
-            function () {
-              $$("filemanager_win").config.fullscreen = !$$("filemanager_win")
-                .config.fullscreen;
-              $$("filemanager_win").resize();
-            },
-            function () {
-              $$("toolbar").removeView("filemanager_button");
-              $$("filemanager_win").hide();
-              desktopApp.buttonCount--;
-            },
-          ];
-        },
-        body: function () {
-          return {
-            view: "filemanager",
-            id: "filemanager",
-            disabledHistory: true,
-            data: filemanagerData,
-          };
-        },
-        events: {
-          onBeforeShow: function () {
-            desktopApp.beforeWinShow("filemanager");
-          },
-          onShow: function () {
-            if (!$$("filemanager").$$("tree").getSelectedId())
-              $$("filemanager")
-                .$$("tree")
-                .select($$("filemanager").getFirstChildId(0));
-          },
-        },
-      },
+      ...apps,
     },
   };
