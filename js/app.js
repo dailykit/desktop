@@ -114,7 +114,7 @@ desktopApp = {
           css: "webix_transparent",
           type: "image",
           image: "img/start.png",
-          width: 72,
+          width: 56,
           on: {
             onItemClick: function () {
               if ($$("winmenu").config.hidden === false) {
