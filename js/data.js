@@ -50,6 +50,12 @@ var startmenu_icons = [
     image: "img/store.png",
     win: "store_win",
   },
+  {
+    id: "support",
+    title: "Support App",
+    image: "img/support.png",
+    win: "support_win",
+  },
 ];
 
 var start_menu = {

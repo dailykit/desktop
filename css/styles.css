@@ -360,3 +360,9 @@ body {
 .dhx_cal_light {
   border-radius: 0 !important;
 }
+
+.support_window {
+  position: absolute;
+  right: 0;
+  left: unset !important;
+}

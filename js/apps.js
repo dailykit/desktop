@@ -1,6 +1,13 @@
-function app_build(id, title, pathname) {
+function app_build({
+  id,
+  title,
+  pathname,
+  pathType,
+  dimensions = {},
+  cssExtend = "",
+}) {
   return {
-    css: "no_border ",
+    css: "no_border " + cssExtend,
     toolbar: function () {
       return [
         title,
@@ -23,7 +30,11 @@ function app_build(id, title, pathname) {
     body: function () {
       return {
         view: "iframe",
-        src: "http://localhost:3000" + pathname,
+        ...dimensions,
+        src:
+          pathType === "absolute"
+            ? pathname
+            : "http://localhost:3000" + pathname,
       };
     },
     events: {
@@ -35,8 +46,31 @@ function app_build(id, title, pathname) {
 }
 
 var apps = {
-  recipe: app_build("recipe", "Recipe App", "/recipe"),
-  settings: app_build("settings", "Settings App", "/settings"),
-  inventory: app_build("inventory", "Inventory App", "/inventory"),
-  store: app_build("store", "Store App", "/online-store"),
+  recipe: app_build({ id: "recipe", title: "Recipe App", pathname: "/recipe" }),
+  settings: app_build({
+    id: "settings",
+    title: "Settings App",
+    pathname: "/settings",
+  }),
+  inventory: app_build({
+    id: "inventory",
+    title: "Inventory App",
+    pathname: "/inventory",
+  }),
+  store: app_build({
+    id: "store",
+    title: "Store App",
+    pathname: "/online-store",
+  }),
+  support: app_build({
+    id: "support",
+    title: "Support App",
+    pathname: "https://docs.dailykit.org",
+    pathType: "absolute",
+    dimensions: {
+      width: 480,
+      height: window.innerHeight,
+    },
+    cssExtend: "support_window",
+  }),
 };

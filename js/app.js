@@ -125,7 +125,7 @@ desktopApp = {
           },
         },
         {},
-        { view: "template", id: "time", width: 95, css: "time-template" },
+        { view: "template", id: "time", width: 80, css: "time-template" },
       ],
     });
   },
