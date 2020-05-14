@@ -31,10 +31,7 @@ function app_build({
       return {
         view: "iframe",
         ...dimensions,
-        src:
-          pathType === "absolute"
-            ? pathname
-            : "http://localhost:3000" + pathname,
+        src: pathType === "absolute" ? pathname : rootUrl + pathname,
       };
     },
     events: {
