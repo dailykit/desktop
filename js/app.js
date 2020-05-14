@@ -66,12 +66,6 @@ desktopApp = {
                   css: "sing-in-form",
                   rows: [
                     {
-                      template:
-                        "<img class='user-logo' src='img/user_logo.png'/><br/>Yan Tsishko<div class='locked'>Locked</div>",
-                      height: 130,
-                      borderless: true,
-                    },
-                    {
                       view: "button",
                       type: "form",
                       label: "Sign in",
@@ -91,11 +85,16 @@ desktopApp = {
     });
   },
   signIn: function () {
-    console.log("login called");
-    webix.$$("main").show();
-    webix.$$("toolbar").show();
+    if (keycloak.authenticated) {
+      webix.$$("main").show();
+      webix.$$("toolbar").show();
+    } else {
+      keycloak.login();
+    }
   },
   signOut: function () {
+    keycloak.logout();
+    keycloak.clearToken();
     desktopApp.wins.hideAllWindows();
     webix.$$("toolbar").hide();
     webix.$$("sign-in").show();
