@@ -1,2 +1,1 @@
-let realm = "";
-let rootUrl = "";
+
