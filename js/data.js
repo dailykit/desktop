@@ -23,6 +23,12 @@ var desktop_icons = [
     image: "img/store.png",
     win: "store_win",
   },
+  {
+    id: "order",
+    title: "Order App",
+    image: "img/order.png",
+    win: "order_win",
+  },
 ];
 
 var startmenu_icons = [
@@ -55,6 +61,12 @@ var startmenu_icons = [
     title: "Support App",
     image: "img/support.png",
     win: "support_win",
+  },
+  {
+    id: "order",
+    title: "Order App",
+    image: "img/order.png",
+    win: "order_win",
   },
 ];
 

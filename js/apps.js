@@ -59,6 +59,11 @@ var apps = {
     title: "Store App",
     pathname: "/online-store",
   }),
+  order: app_build({
+    id: "order",
+    title: "Order App",
+    pathname: "/order",
+  }),
   support: app_build({
     id: "support",
     title: "Support App",
