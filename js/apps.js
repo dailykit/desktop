@@ -64,10 +64,15 @@ var apps = {
     title: "Order App",
     pathname: "/order",
   }),
+  safety: app_build({
+    id: "safety",
+    title: "Safety App",
+    pathname: "/safety",
+  }),
   support: app_build({
     id: "support",
     title: "Support App",
-    pathname: "https://docs.dailykit.org",
+    pathname: "https://dev.dailykit.org",
     pathType: "absolute",
     dimensions: {
       width: 480,
