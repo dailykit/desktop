@@ -31,13 +31,14 @@ desktopApp = {
           type: "clean",
           cols: [
             {
-              view: "list",
+              view: "dataview",
               id: "desktop",
-              width: 105,
               css: "desktop-items",
-
+              xCount: 2,
+              marginBottom: 16,
               type: {
-                height: 110,
+                width: 120,
+                height: 93,
                 template:
                   "<div class='desktop-item-inner'><img src='#image#'><div class='desktop-icons'> #title#</div></div>",
                 css: "desktop-item",

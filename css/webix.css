@@ -1147,6 +1147,9 @@ button,
   box-sizing: border-box;
   background-color: transparent;
 }
+.webix_scroll_cont > div {
+  margin-bottom: 16px;
+}
 .webix_pager_item,
 .webix_pager_item_selected {
   padding: 0 6px;
@@ -1222,7 +1225,6 @@ button,
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 2px 12px;
   line-height: 31px;
   cursor: pointer;
   border-bottom: 1px solid #edeff0;
