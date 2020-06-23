@@ -1147,9 +1147,6 @@ button,
   box-sizing: border-box;
   background-color: transparent;
 }
-.webix_scroll_cont > div {
-  margin-bottom: 16px;
-}
 .webix_pager_item,
 .webix_pager_item_selected {
   padding: 0 6px;
