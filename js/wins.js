@@ -155,7 +155,7 @@ if (window.desktopApp)
       desktopApp.wins.setActiveStyle(winId);
     },
     ui: {
-      toolbar: function (title, onHide, onMinMax, onClose) {
+      toolbar: function (title, onHide, onMinMax, onClose, icon) {
         return {
           view: "toolbar",
           height: 28,
@@ -166,8 +166,7 @@ if (window.desktopApp)
             {
               view: "label",
               label:
-                "<img src='img/window-icon.png' class='header-window-icon'/> " +
-                title,
+                "<img src='" + icon + "' class='header-window-icon'/> " + title,
             },
             {
               view: "button",

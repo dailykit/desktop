@@ -35,6 +35,18 @@ var desktop_icons = [
     image: "img/safety.png",
     win: "safety_win",
   },
+  {
+    id: "crm",
+    title: "CRM App",
+    image: "img/crm.png",
+    win: "crm_win",
+  },
+  {
+    id: "subscription",
+    title: "Subscription App",
+    image: "img/subscription.png",
+    win: "subscription_win",
+  },
 ];
 
 var startmenu_icons = [
@@ -79,6 +91,18 @@ var startmenu_icons = [
     title: "Safety App",
     image: "img/safety.png",
     win: "safety_win",
+  },
+  {
+    id: "crm",
+    title: "CRM App",
+    image: "img/crm.png",
+    win: "crm_win",
+  },
+  {
+    id: "subscription",
+    title: "Subscription App",
+    image: "img/subscription.png",
+    win: "subscription_win",
   },
 ];
 

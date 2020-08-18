@@ -1,5 +1,6 @@
 function app_build({
   id,
+  icon,
   title,
   pathname,
   pathType,
@@ -25,6 +26,7 @@ function app_build({
           $$(id + "_win").hide();
           desktopApp.buttonCount--;
         },
+        icon,
       ];
     },
     body: function () {
@@ -43,31 +45,53 @@ function app_build({
 }
 
 var apps = {
-  recipe: app_build({ id: "recipe", title: "Recipe App", pathname: "/recipe" }),
+  recipe: app_build({
+    id: "recipe",
+    title: "Recipe App",
+    pathname: "/recipe",
+    icon: "img/recipe.png",
+  }),
   settings: app_build({
     id: "settings",
     title: "Settings App",
     pathname: "/settings",
+    icon: "img/settings.png",
   }),
   inventory: app_build({
     id: "inventory",
     title: "Inventory App",
     pathname: "/inventory",
+    icon: "img/inventory.png",
   }),
   store: app_build({
     id: "store",
     title: "Store App",
     pathname: "/online-store",
+    icon: "img/store.png",
   }),
   order: app_build({
     id: "order",
     title: "Order App",
     pathname: "/order",
+    icon: "img/order.png",
   }),
   safety: app_build({
     id: "safety",
     title: "Safety App",
     pathname: "/safety",
+    icon: "img/safety.png",
+  }),
+  crm: app_build({
+    id: "crm",
+    title: "CRM App",
+    pathname: "/crm",
+    icon: "img/crm.png",
+  }),
+  subscription: app_build({
+    id: "subscription",
+    title: "Subscription App",
+    pathname: "/subscription",
+    icon: "img/subscription.png",
   }),
   support: app_build({
     id: "support",
