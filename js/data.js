@@ -12,10 +12,10 @@ var desktop_icons = [
     win: "inventory_win",
   },
   {
-    id: "product",
-    title: "Product",
+    id: "products",
+    title: "Products",
     image: "img/product.png",
-    win: "product_win",
+    win: "products_win",
   },
   {
     id: "menu",
@@ -75,10 +75,10 @@ var startmenu_icons = [
     win: "inventory_win",
   },
   {
-    id: "product",
-    title: "Product",
+    id: "products",
+    title: "Products",
     image: "img/product.png",
-    win: "product_win",
+    win: "products_win",
   },
   {
     id: "menu",

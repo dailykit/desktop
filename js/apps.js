@@ -45,10 +45,10 @@ function app_build({
 }
 
 var apps = {
-  product: app_build({
-    id: "product",
-    title: "Product",
-    pathname: "/product",
+  products: app_build({
+    id: "products",
+    title: "Products",
+    pathname: "/products",
     icon: "img/product.png",
   }),
   settings: app_build({
@@ -66,7 +66,7 @@ var apps = {
   menu: app_build({
     id: "menu",
     title: "Menu",
-    pathname: "/online-store",
+    pathname: "/menu",
     icon: "img/menu.png",
   }),
   order: app_build({
