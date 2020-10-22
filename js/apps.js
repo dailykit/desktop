@@ -45,58 +45,70 @@ function app_build({
 }
 
 var apps = {
-  recipe: app_build({
-    id: "recipe",
-    title: "Recipe App",
-    pathname: "/recipe",
-    icon: "img/recipe.png",
+  products: app_build({
+    id: "products",
+    title: "Products",
+    pathname: "/products",
+    icon: "img/product.png",
   }),
   settings: app_build({
     id: "settings",
-    title: "Settings App",
+    title: "Settings",
     pathname: "/settings",
     icon: "img/settings.png",
   }),
   inventory: app_build({
     id: "inventory",
-    title: "Inventory App",
+    title: "Inventory",
     pathname: "/inventory",
     icon: "img/inventory.png",
   }),
-  store: app_build({
-    id: "store",
-    title: "Store App",
-    pathname: "/online-store",
-    icon: "img/store.png",
+  menu: app_build({
+    id: "menu",
+    title: "Menu",
+    pathname: "/menu",
+    icon: "img/menu.png",
   }),
   order: app_build({
     id: "order",
-    title: "Order App",
+    title: "Order",
     pathname: "/order",
     icon: "img/order.png",
   }),
   safety: app_build({
     id: "safety",
-    title: "Safety App",
+    title: "Safety",
     pathname: "/safety",
     icon: "img/safety.png",
   }),
   crm: app_build({
     id: "crm",
-    title: "CRM App",
+    title: "CRM",
     pathname: "/crm",
     icon: "img/crm.png",
   }),
   subscription: app_build({
     id: "subscription",
-    title: "Subscription App",
+    title: "Subscription",
     pathname: "/subscription",
     icon: "img/subscription.png",
   }),
+  brand: app_build({
+    id: "brand",
+    title: "Brand",
+    pathname: "/brands",
+    icon: "img/brand.png",
+  }),
+  insights: app_build({
+    id: "insights",
+    title: "Insights",
+    pathname: "/insights",
+    icon: "img/insights.png",
+  }),
   support: app_build({
     id: "support",
-    title: "Support App",
-    pathname: "https://dev.dailykit.org",
+    title: "Support",
+    pathname: "https://docs.dailykit.org",
     pathType: "absolute",
     dimensions: {
       width: 480,
